@@ -1,0 +1,29 @@
+<p id="submit_area">
+% if user.username
+  Thanks, {{user.username}}.
+  <br>
+  <a href="/newidea" class="button">Submit Your Idea</a>
+% else
+  <a href="/users/new" class="button">Submit Your Idea</a>
+% end
+</p>
+
+<div id="feed">
+
+  % if feed
+    % feed.each do |item|
+      <article class="idea">
+      <h3>{{item.title}}</h3>
+      <p>
+      {{item.content}}
+      <span class="signature">Submitted by {{User.get(item.user_id).username}}</span>
+      </p>
+      </article>
+    % end
+  % end
+
+
+
+
+
+</div>

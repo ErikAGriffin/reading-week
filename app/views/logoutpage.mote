@@ -1,0 +1,9 @@
+% if !user.username
+  <p>Come Back Soon!
+  <br>
+  <a href="/">Back to Home Page</a>
+  </p>
+% else
+  Whoops! Did you mean to <a href="/logout">Log Out</a>?
+%end
+

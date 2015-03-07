@@ -1,0 +1,9 @@
+<form action="/login" method="post">
+
+  <ul>
+    <li>Username: <input name="username" type="text" /></li>
+    <li>Password: <input name="password" type="password" /></li>
+    <li><input value="Sign In" type="submit" /></li>
+  </ul>
+</form>
+

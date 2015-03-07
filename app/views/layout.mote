@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reading Week Hub</title>
+    <link rel="stylesheet" type="text/css" href="/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+  </head>
+    <body>
+      <header>
+        <h1>Reading Week Projects</h1>
+        <div id="top_menu">
+          % if user.username
+            <a href="/logout">Log Out</a>
+          % else
+            <a href="/users/new" class="button">Sign Up</a>
+            <a href="/login">Log In</a>
+          % end
+        </div>
+      </header>
+
+      <main>
+        % if !errors.empty?
+          <p id="errorbox">
+          % errors.each do |error|
+            {{error}}<br>
+          % end
+          </p>
+        % end
+        {{content}}
+      </main>
+    </body>
+</html>

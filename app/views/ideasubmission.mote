@@ -1,0 +1,13 @@
+<form action="/submit" method="post">
+
+  Title: <input type="text" name="title" />
+  <br>
+  Describe your idea text here:
+  <br>
+  <textarea name="content" rows="12" cols="30" required="YES">
+  </textarea>
+  <br>
+  <input type="submit" value="Submit" />
+
+
+</form>
