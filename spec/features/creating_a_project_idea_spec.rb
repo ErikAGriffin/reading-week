@@ -6,6 +6,7 @@ feature 'Creating a new Idea' do
     sign_up
     click_link('Submit Your Idea');
     expect{create_idea}.to change(ProjectIdea, :count).by 1
+    expect(User.get(ProjectIdea.first.user_id).projectIdeas.first.title).to eq 'A Twitter Clone'
     expect(page).to have_content "A Twitter Clone"
   end
 
