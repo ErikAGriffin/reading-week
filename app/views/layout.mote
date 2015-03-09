@@ -7,7 +7,7 @@
   </head>
     <body>
       <header>
-        <h1>Reading Week Projects</h1>
+        <a href="/"><h1>Reading Week Projects</h1></a>
         <div id="top_menu">
           % if user.username
             <a href="/logout">Log Out</a>

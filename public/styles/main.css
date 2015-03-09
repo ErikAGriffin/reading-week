@@ -8,7 +8,6 @@ body {
 
 main {
   margin: 1em 1em;
-
 }
 
 a {
@@ -32,8 +31,21 @@ article p {
   line-height: 1.5;
 }
 
+form {
+  width: 300px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+  padding: 2px 0px;
+}
+
 input {
   color:black;
+  width: 300px;
 }
 
 textarea {
@@ -41,6 +53,7 @@ textarea {
 }
 
 input[type=submit] {
+  width:auto;
   color:white;
   background-color:#009C20;
   border-radius: 8px;
@@ -83,6 +96,12 @@ input[type=submit]:hover {
 
 .signature {
   font-size:.6em;
+}
 
+.align-left {
+  text-align:left;
+}
 
+.align-right {
+  text-align:right;
 }

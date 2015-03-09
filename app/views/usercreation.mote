@@ -1,8 +1,15 @@
+<article>
+  <h3>Sign Up</h3>
 <form action="/users" method="post">
     <ul>
-        <li>Username: <input name="username" type="text" value="{{user.username}}"></li>
-        <li>Password: <input name="password" type="password"></li>
-        <li>Confirm Password: <input name="password_confirmation" type="password"></li>
-        <li><input value="Sign Up" type="submit"></li>
+      <li>Username:</li>
+      <li><input name="username" type="text" value="{{user.username}}"></li>
+      <li>Password:</li>
+      <li><input name="password" type="password"></li>
+      <li>Confirm Password:</li>
+      <li><input name="password_confirmation" type="password"></li>
+      <li><input value="Sign Up" type="submit">
+        <span class="signature">   or <a href="/login">login</a></span></li>
     </ul>
 </form>
+</article>
